@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+
+.black-text {
+    color: #00072D;
+}
+
+.darkblue-text {
+    color: #051650;
+}
+
+.blue-text {
+    color: #0A2472;
+}
+
+.lightblue-text {
+    color: #1A43BF;
+}
+
+
+.black-background {
+    background-color: #00072D;
+}
+
+.darkblue-background {
+    background-color: #051650;
+}
+
+.blue-background {
+    background-color: #0A2472;
+}
+
+.lightblue-background {
+    background-color: #1A43BF;
+}
+
+body::-webkit-scrollbar {
+    width: 20px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-image: url('https://cdn-icons-png.freepik.com/512/5461/5461252.png');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.slide-in-fwd-right{-webkit-animation:slide-in-fwd-right .4s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-fwd-right .4s cubic-bezier(.25,.46,.45,.94) both}
+@-webkit-keyframes slide-in-fwd-right{0%{-webkit-transform:translateZ(-1400px) translateX(1000px);transform:translateZ(-1400px) translateX(1000px);opacity:0}100%{-webkit-transform:translateZ(0) translateX(0);transform:translateZ(0) translateX(0);opacity:1}}@keyframes slide-in-fwd-right{0%{-webkit-transform:translateZ(-1400px) translateX(1000px);transform:translateZ(-1400px) translateX(1000px);opacity:0}100%{-webkit-transform:translateZ(0) translateX(0);transform:translateZ(0) translateX(0);opacity:1}}
