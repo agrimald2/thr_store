@@ -66,13 +66,14 @@
                                     <p class="mt-0.5 text-sm text-gray-500">Shipping and taxes calculated at checkout.
                                     </p>
                                     <div class="mt-6">
-                                        <a href="#"
+                                        <a href="https://xplatt.com/payment_link/RC-FNTCJGQNQD-1"
                                             class="flex items-center justify-center rounded-md border border-transparent blue-background px-6 py-3 text-base font-medium text-white shadow-sm hover:lightblue-background">Checkout</a>
                                     </div>
                                     <div class="mt-6 flex justify-center text-center text-sm text-gray-500">
                                         <p>
                                             or
-                                            <button @click="closeCart" type="button" class="font-medium blue-text hover:text-indigo-500">
+                                            <button @click="closeCart" type="button"
+                                                class="font-medium blue-text hover:text-indigo-500">
                                                 Continue Shopping
                                                 <span aria-hidden="true"> &rarr;</span>
                                             </button>

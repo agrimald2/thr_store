@@ -2,7 +2,7 @@
     <footer class="p-4 bg-white md:p-8 lg:p-10">
         <div class="mx-auto max-w-screen-xl text-center">
             <a href="#" class="flex justify-center items-center text-2xl font-semibold text-gray-900 ">
-                <img src="/storage/images/settings/logo_large.png" alt="logo" class='md:w-[170px] w-36' />
+                <img src="/storage/images/settings/logo_large.png" alt="logo" class='md:w-[240px] w-48' />
             </a>
             <p class="my-6 text-gray-500">
                 Transformando la minería con calidad y experiencia desde hace 20 años.
