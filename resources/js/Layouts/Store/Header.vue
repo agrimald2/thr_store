@@ -2,8 +2,9 @@
     <header>
         <section
             class='fixed top-0 left-0 right-0 z-20 shadow-md bg-white font-sans flex items-center justify-between py-3 px-10 border-gray-200 border-b lg:min-h-[80px] max-lg:min-h-[60px]'>
-            <a href="#" class="w-36 md:w-48">
-                <img src="/storage/images/settings/logo_large.png" alt="logo" class="w-full" />
+            <a href="#" class="block w-36 md:w-48">
+                <img src="/storage/images/settings/logo.png" alt="logo" class="w-full md:hidden" />
+                <img src="/storage/images/settings/logo_large.png" alt="logo" class="hidden w-full md:block" />
             </a>
             <div class='flex flex-wrap px-10 overflow-x-auto'>
                 <ul id="collapseMenu" ref="collapseMenu"
