@@ -5,11 +5,12 @@
         <main>
             <slot />
         </main>
-        <Alert />
+        <Alert v-if="isAlertVisible" />
         <Footer />
     </div>
 </template>
 <script>
+import { mapState } from 'vuex';
 import Alert from '@/Components/SuccessAlert.vue';
 import Header from '@/Layouts/Store/Header.vue';
 import Footer from '@/Layouts/Store/Footer.vue';
@@ -25,8 +26,21 @@ export default {
     data() {
         return {
             isCartOpen: false,
+            alertKey: null,
         };
     },
+    methods: {
+        showSuccessAlert(key) {
+            console.log(key);
+            this.alertKey = key;
+            setTimeout(() => {
+                this.alertKey = null;
+            }, 2000);
+        },
+    },
+    computed: {
+        ...mapState(['isAlertVisible']),
+    }
 }
 </script>
 <style></style>

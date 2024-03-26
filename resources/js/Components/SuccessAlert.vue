@@ -11,7 +11,7 @@
             </div>
             <div class="ml-3">
                 <p class="text-sm text-gray-700 dark:text-gray-400">
-                    This is a success message.
+                    Añadido al carrito
                 </p>
             </div>
         </div>

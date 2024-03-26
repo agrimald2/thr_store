@@ -4,6 +4,7 @@ export default createStore({
     state: {
         cartItems: [],
         cartItemsCounter: 0,
+        isAlertVisible: false,
     },
     mutations: {
         ADD_TO_CART(state, product) {
@@ -24,6 +25,9 @@ export default createStore({
             }
             state.cartItemsCounter = state.cartItems.reduce((total, item) => total + item.quantity, 0);
         },
+        SET_ALERT_VISIBLE(state, isVisible) {
+            state.isAlertVisible = isVisible;
+        },
     },
     actions: {
         addToCart({ commit }, product) {
@@ -31,6 +35,12 @@ export default createStore({
         },
         removeFromCart({ commit }, product) {
             commit('REMOVE_FROM_CART', product);
+        },
+        showSuccessAlert({ commit }) {
+            commit('SET_ALERT_VISIBLE', true);
+            setTimeout(() => {
+                commit('SET_ALERT_VISIBLE', false);
+            }, 2000);
         },
     },
 });
