@@ -1,5 +1,5 @@
 <template>
-    <section class="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-white dark:bg-dark px-2" id="about">
+    <section class="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-white px-2" id="about">
       <div class="container mx-auto">
         <div class="flex flex-wrap items-center justify-between -mx-4">
           <div class="w-full px-4 lg:w-6/12">
@@ -604,13 +604,13 @@
           <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
             <div class="mt-10 lg:mt-0">
               <span class="black-text block mb-4 text-lg font-semibold text-primary"> ¿Quiénes somos? </span>
-              <h2 class="darkblue-text mb-5 text-3xl font-bold dark:text-white sm:text-[40px]/[48px]">
+              <h2 class="darkblue-text mb-5 text-3xl font-bold sm:text-[40px]/[48px]">
                 Tu socio confiable en la industria minera
               </h2>
-              <p class="mb-5 text-base text-body-color dark:text-dark-6">
+              <p class="mb-5 text-base text-body-color">
                 Somos líderes en el suministro de equipos y repuestos mineros de primera calidad. Nuestro enfoque se centra en proporcionar soluciones especializadas que optimicen la eficiencia y la productividad en cada etapa de la operación minera. Confía en nosotros como tu socio confiable para alcanzar el éxito en la industria minera.
               </p>
-              <p class="mb-8 text-base text-body-color dark:text-dark-6">
+              <p class="mb-8 text-base text-body-color">
                 Nos enorgullece ofrecer una amplia gama de productos y soluciones especializadas diseñadas para enfrentar los desafíos únicos de la industria minera. Con nosotros, puedes confiar en obtener la excelencia en cada aspecto de tu operación minera.
               </p>
               <a

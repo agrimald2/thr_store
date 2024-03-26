@@ -1,5 +1,5 @@
 <template>
-    <div class="slide-in-fwd-right max-w-xs bg-white border border-gray-200 rounded-xl shadow-lg dark:bg-gray-800 dark:border-gray-700 fixed right-0 bottom-0 mb-4 mr-4 z-30"
+    <div class="slide-in-fwd-right max-w-xs bg-white border border-gray-200 rounded-xl shadow-lg fixed right-0 bottom-0 mb-4 mr-4 z-30"
         role="alert">
         <div class="flex p-4">
             <div class="flex-shrink-0">
@@ -10,7 +10,7 @@
                 </svg>
             </div>
             <div class="ml-3">
-                <p class="text-sm text-gray-700 dark:text-gray-400">
+                <p class="text-sm text-gray-700">
                     Añadido al carrito
                 </p>
             </div>
