@@ -18,7 +18,7 @@
                             class='hover:text-[#051650] hover:underline text-[#051650] font-bold text-[15px] block'>Nosotros</a>
                     </li>
                     <li class='max-lg:border-b max-lg:py-2'>
-                        <a href='#'
+                        <a href='https://wa.me/995028146'
                             class='hover:text-[#051650] hover:underline text-[#051650] font-bold text-[15px] block'>Contacto</a>
                     </li>
                     <li class='max-lg:border-b max-lg:py-2'>
@@ -33,7 +33,7 @@
                 <i class="cursor-pointer darkblue-text text-2xl mx-2 fa-brands fa-instagram"
                     @click="goTo('https://www.instagram.com/thrcorporation/?hl=es')"></i>
                 <i class="cursor-pointer darkblue-text text-2xl mx-2 fa-brands fa-whatsapp"
-                    @click="goTo('https://wa.me/51934094501')"></i>
+                    @click="goTo('https://wa.me/995028146')"></i>
                 <div class="inline-block border-gray-300 border-l-2 pl-6 cursor-pointer relative"
                     @click="$emit('toggle-cart')">
                     <i class="darkblue-text fa-solid fa-cart-shopping"></i>
