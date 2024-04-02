@@ -15,7 +15,13 @@
                     <a href="#" class="mr-4 hover:underline md:mr-6">Comprar</a>
                 </li>
                 <li>
-                    <a href="#" class="mr-4 hover:underline md:mr-6 ">Contáctanos</a>
+                    <a href="https://api.whatsapp.com/send/?phone=995028146&text&type=phone_number&app_absent=0" class="mr-4 hover:underline md:mr-6 ">Contáctanos</a>
+                </li>
+                <li>
+                    <a href="https://docs.google.com/document/d/1AICK9BesdZSttwhyGsx0GCEQl_6LGFe5/edit?usp=sharing&ouid=111700758049235717454&rtpof=true&sd=true" class="mr-4 hover:underline md:mr-6">Política de CyD</a>
+                </li>
+                <li>
+                    <a href="https://docs.google.com/document/d/1sysuhdgtHjdFxtZ40MrbsP4oeA-wgrhR/edit?usp=sharing&ouid=111700758049235717454&rtpof=true&sd=true" class="mr-4 hover:underline md:mr-6">Términos y Condiciones</a>
                 </li>
                 <li>
                     <a href="#" class="mr-4 hover:underline md:mr-6">Libro de Reclamaciones</a>
