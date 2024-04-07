@@ -1,0 +1,1 @@
+import{o as e,e as s,b as t,w as a,u as o,j as c,a as r}from"./app-Chp1Ug2_.js";const n={class:"flex justify-center"},_=r("img",{src:"/storage/images/settings/logo_large.png",alt:"logo",class:"w-1/4 max-w-xs md:block"},null,-1),u={__name:"AuthenticationCardLogo",setup(l){return(i,g)=>(e(),s("div",n,[t(o(c),{href:"/"},{default:a(()=>[_]),_:1})]))}};export{u as _};
