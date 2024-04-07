@@ -3,6 +3,7 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\ComplaintController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,10 @@ Route::get('/', function () {
         'phpVersion' => PHP_VERSION,
     ]);
 });
+
+Route::get('/complaint', [ComplaintController::class, 'getComplaintForm']);
+Route::post('/complaint', [ComplaintController::class, 'postComplaint']);
+
 
 Route::middleware([
     'auth:sanctum',

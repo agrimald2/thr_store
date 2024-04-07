@@ -2,13 +2,14 @@
     <header>
         <section
             class='fixed top-0 left-0 right-0 z-20 shadow-md bg-white font-sans flex items-center justify-between py-3 px-10 border-gray-200 border-b lg:min-h-[80px] max-lg:min-h-[60px]'>
-            <a href="#" class="block w-36 md:w-48">
+            <a href="/" class="block w-36 md:w-48">
                 <img src="/storage/images/settings/logo.png" alt="logo" class="w-full md:hidden" />
                 <img src="/storage/images/settings/logo_large.png" alt="logo" class="hidden w-full md:block" />
             </a>
             <div class='flex flex-wrap px-10 overflow-x-auto'>
                 <ul id="collapseMenu" ref="collapseMenu"
                     class='lg:!flex justify-center lg:space-x-10 max-lg:space-y-3 max-lg:hidden w-full max-lg:mt-2'>
+
                     <li class='max-lg:border-b max-lg:py-2'>
                         <a href='#home'
                             class='hover:text-[#051650] hover:underline text-[#051650] font-bold text-[15px] block'>Home</a>
@@ -28,6 +29,8 @@
                 </ul>
             </div>
             <div class="flex items-center">
+                <i class="cursor-pointer text-gray-500 text-2xl mx-2 fa-solid fa-book mr-5"
+                    @click="goTo('/complaint')"></i>
                 <i class="cursor-pointer darkblue-text text-2xl mx-2 fa-brands fa-facebook"
                     @click="goTo('https://www.facebook.com/profile.php?id=61557244334272')"></i>
                 <i class="cursor-pointer darkblue-text text-2xl mx-2 fa-brands fa-instagram"
