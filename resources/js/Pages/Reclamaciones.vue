@@ -64,7 +64,8 @@ import axios from 'axios';
                             </div>
 
                             <div class="mb-4">
-                                <label for="complaint" class="block text-sm font-medium text-gray-700">Detalles del BIEN o PRODUCTO contratado</label>
+                                <label for="complaint" class="block text-sm font-medium text-gray-700">Detalles del BIEN
+                                    o PRODUCTO contratado</label>
                                 <textarea id="complaint" v-model="form.complaint" rows="4"
                                     class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                                     required></textarea>
@@ -91,6 +92,23 @@ import axios from 'axios';
                                     archivos</label>
                                 <input type="file" id="files" ref="files" @change="handleFilesUpload" multiple
                                     class="mt-1 block w-full">
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="termsCheckbox" class="flex items-center">
+                                    <input type="checkbox" id="termsCheckbox" v-model="form.termsAgreement"
+                                        class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                                        required>
+                                    <span class="ml-2 block text-sm font-medium text-gray-700">Me encuentro conforme con
+                                        los términos de mi reclamo o queja*</span>
+                                </label>
+                            </div>
+
+                            <div class="mb-4 text-sm">
+                                La formulación del reclamo no impide acudir a otras vías de solución de controversias ni
+                                es requisito previo para interponer una denuncia ante el INDECOPI.
+                                El proveedor debe dar respuesta al reclamo o queja en un plazo no mayor a quince (15)
+                                días hábiles, el cuál es improrrogable.
                             </div>
 
                             <div class="flex justify-end">
