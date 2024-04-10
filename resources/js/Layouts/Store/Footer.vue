@@ -19,11 +19,11 @@
                         class="mr-4 hover:underline md:mr-6 ">Contáctanos</a>
                 </li>
                 <li>
-                    <a href="https://docs.google.com/document/d/1AICK9BesdZSttwhyGsx0GCEQl_6LGFe5/edit?usp=sharing&ouid=111700758049235717454&rtpof=true&sd=true"
+                    <a href="/cyd"
                         class="mr-4 hover:underline md:mr-6">Política de CyD</a>
                 </li>
                 <li>
-                    <a href="https://docs.google.com/document/d/1sysuhdgtHjdFxtZ40MrbsP4oeA-wgrhR/edit?usp=sharing&ouid=111700758049235717454&rtpof=true&sd=true"
+                    <a href="/tyc"
                         class="mr-4 hover:underline md:mr-6">Términos y Condiciones</a>
                 </li>
                 <li>
