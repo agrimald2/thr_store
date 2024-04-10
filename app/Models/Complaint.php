@@ -11,10 +11,14 @@ class Complaint extends Model
 
     protected $fillable = [
         'name',
-        'dni',
         'email',
         'phone',
+        'doc_type',
+        'doc_number',
+        'products_details',
+        'amount',
         'incidentDate',
+        'details',
         'complaint',
         'files',
     ];

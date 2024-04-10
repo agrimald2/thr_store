@@ -15,6 +15,10 @@ import axios from 'axios';
                         <h1 class="text-2xl font-bold">Libro de Reclamaciones</h1>
                         <h2 class="text-xl">THR CORPORATION</h2>
                         <h3 class="text-lg">20606613041</h3>
+                        <p>
+                            Tienda Online: las ventas online no aplican a menores de 18 años <br>
+                            Establecimiento comercial: tienda online www.thrcorporation.com
+                        </p>
                     </div>
                     <div class="w-full sm:max-w-2xl mt-6 p-6 bg-white shadow-md overflow-hidden sm:rounded-lg">
                         <form @submit.prevent="submitForm">
@@ -25,14 +29,6 @@ import axios from 'axios';
                                     class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                                     required>
                             </div>
-
-                            <div class="mb-4">
-                                <label for="name" class="block text-sm font-medium text-gray-700">DNI</label>
-                                <input type="text" id="name" v-model="form.dni"
-                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                                    required>
-                            </div>
-
                             <div class="mb-4">
                                 <label for="email" class="block text-sm font-medium text-gray-700">Correo
                                     electrónico</label>
@@ -46,6 +42,32 @@ import axios from 'axios';
                                 <input type="tel" id="phone" v-model="form.phone"
                                     class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                                     required>
+                            </div>
+
+                            <div class="flex mb-4 -mx-2">
+                                <div class="w-1/2 px-2">
+                                    <label for="dni" class="block text-sm font-medium text-gray-700">TIPO DE DOC</label>
+                                    <select id="dni" v-model="form.doc_type"
+                                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                                        required>
+                                        <option value="DNI">DNI</option>
+                                        <option value="CE">CE</option>
+                                        <option value="PASAPORTE">PASAPORTE</option>
+                                    </select>
+                                </div>
+                                <div class="w-1/2 px-2">
+                                    <label for="dni" class="block text-sm font-medium text-gray-700">DOCUMENTO</label>
+                                    <input type="text" id="dni" v-model="form.doc_number"
+                                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="complaint" class="block text-sm font-medium text-gray-700">Detalles del BIEN o PRODUCTO contratado</label>
+                                <textarea id="complaint" v-model="form.complaint" rows="4"
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                                    required></textarea>
                             </div>
 
                             <div class="mb-4">
@@ -111,9 +133,10 @@ export default {
         return {
             form: {
                 name: '',
-                dni: '',
                 email: '',
                 phone: '',
+                doc_type: '',
+                doc_number: '',
                 incidentDate: '',
                 complaint: '',
                 files: []

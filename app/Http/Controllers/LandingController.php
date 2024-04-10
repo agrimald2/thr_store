@@ -6,5 +6,13 @@ use Illuminate\Http\Request;
 
 class LandingController extends Controller
 {
-    //
+    public function showPrivacyPolicy()
+    {
+        return inertia('PrivacyPolicy');
+    }
+
+    public function showCyD()
+    {
+        return inertia('CyD');
+    }
 }

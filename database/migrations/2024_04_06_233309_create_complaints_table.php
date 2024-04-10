@@ -14,10 +14,14 @@ return new class extends Migration
         Schema::create('complaints', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('dni');
             $table->string('email');
             $table->string('phone');
+            $table->enum('doc_type', ['DNI', 'CE', 'PASAPORTE']);
+            $table->string('doc_number');
+            $table->text('products_details');
+            $table->text('amount');
             $table->date('incidentDate');
+            $table->text('details');
             $table->text('complaint');
             $table->json('files')->nullable();
             $table->timestamps();

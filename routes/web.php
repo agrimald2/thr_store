@@ -4,6 +4,7 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\ComplaintController;
+use App\Http\Controllers\LandingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +29,8 @@ Route::get('/', function () {
 Route::get('/complaint', [ComplaintController::class, 'getComplaintForm']);
 Route::post('/complaint', [ComplaintController::class, 'postComplaint']);
 
+Route::get('/tyc', [LandingController::class, 'showPrivacyPolicy']);
+Route::get('/cyd', [LandingController::class, 'showCyD']);
 
 Route::middleware([
     'auth:sanctum',
