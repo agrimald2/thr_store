@@ -66,8 +66,8 @@
                                     <p class="mt-0.5 text-sm text-gray-500">Shipping and taxes calculated at checkout.
                                     </p>
                                     <div class="mt-6">
-                                        <a href="https://xplatt.com/payment_link/RC-8HHKWQEXZB-6"
-                                            class="flex items-center justify-center rounded-md border border-transparent blue-background px-6 py-3 text-base font-medium text-white shadow-sm hover:lightblue-background">Checkout</a>
+                                        <button @click="getPaymentLink"
+                                            class="flex items-center justify-center rounded-md border border-transparent blue-background px-6 py-3 text-base font-medium text-white shadow-sm hover:lightblue-background">Checkout</button>
                                     </div>
                                     <div class="mt-6 flex justify-center text-center text-sm text-gray-500">
                                         <p>
@@ -91,6 +91,7 @@
 </template>
 <script>
 import { mapState } from 'vuex';
+import axios from 'axios';
 
 export default {
     props: ['isOpen'],
@@ -98,6 +99,9 @@ export default {
         ...mapState(['cartItems']),
         subtotal() {
             return this.cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+        },
+        cartDescription() {
+            return this.cartItems.map(item => `${item.name} (Qty: ${item.quantity})`).join(', ');
         }
     },
     methods: {
@@ -108,6 +112,21 @@ export default {
         handleRemoveFromCart(product) {
             this.$store.dispatch('removeFromCart', product);
         },
+        getPaymentLink() {
+            const paymentApiUrl = 'https://xplatt.com/api/getPaymentLink';
+            const amountUSD = this.subtotal;
+            const currency = 'USD';
+            const description = encodeURIComponent(this.cartDescription);
+
+            axios.get(`${paymentApiUrl}?amount_usd=${amountUSD}&currency=${currency}&description=${description}`)
+                .then(response => {
+                    const paymentLink = response.data.paymentLink;
+                    window.location.href = paymentLink;
+                })
+                .catch(error => {
+                    console.error('Error fetching payment link:', error);
+                });
+        }
     }
 }
 </script>
