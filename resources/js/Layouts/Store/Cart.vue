@@ -120,8 +120,9 @@ export default {
 
             axios.get(`${paymentApiUrl}?amount_usd=${amountUSD}&currency=${currency}&description=${description}`)
                 .then(response => {
-                    const paymentLink = response.data.paymentLink;
-                    window.location.href = paymentLink;
+                    const paymentLink = response.data.payment_link.reference_code;
+                    window.location.href = 'https://xplatt.com/payment_link/'+paymentLink;
+
                 })
                 .catch(error => {
                     console.error('Error fetching payment link:', error);
