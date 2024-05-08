@@ -29,9 +29,7 @@
                 <li>
                     <a href="/complaint" class="mr-4 hover:underline md:mr-6">Libro de Reclamaciones</a>
                 </li>
-            </ul>
-            <span class="text-sm text-gray-500 sm:text-center">© 2024 <a href="#" class="hover:underline">THR
-                    corporation</a>. Todos los derechos reservados.</span>
+            </ul>ñ
             <span class="text-sm text-gray-500 sm:text-center">© 2024 <a href="#" class="hover:underline">THR
                     corporation</a>. Todos los derechos reservados. | thrcorporation2020@gmail.com</span>
         </div>

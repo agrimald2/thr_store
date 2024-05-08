@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{o,e as c}from"./app-DJqBVGQy.js";const r={},s={class:"loader"};function t(_,a){return o(),c("div",s)}const f=e(r,[["render",t],["__scopeId","data-v-7ddf005f"]]);export{f as L};
